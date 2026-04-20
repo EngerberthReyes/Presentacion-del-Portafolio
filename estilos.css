@@ -17,7 +17,12 @@ body {
 
 .titulo {
   font-size: 18px;
-  margin: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.sub-titulo {
+  font-size: 16px;
+  margin: 0.5rem 0 0 0;
 }
 
 .seccion-central {
@@ -36,7 +41,11 @@ body {
 }
 
 .imagen-representativa {
-  width: 10rem;
+  width: 100%;
+  max-width: 10rem;
+  border-radius: 8px;
+  -webkit-mask-image: radial-gradient(ellipse, #0f0f0f 40%, transparent 95%);
+  mask-image: radial-gradient(ellipse, #0f0f0f 40%, transparent 95%);
 }
 
 .seccion-informacion-presentacion {
