@@ -46,7 +46,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .seccion-informacion {
@@ -68,10 +68,19 @@ body {
 .seccion-informacion-presentacion {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1rem;
   width: 100%;
 }
 
 .seccion-sobre-mi {
   padding: 1rem;
+}
+
+.experiencia {
+  padding: 0 1rem;
+}
+
+.contenedor-experiencia {
+  padding: 1rem 1rem 0 1rem;
 }
