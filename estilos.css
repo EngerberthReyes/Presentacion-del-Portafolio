@@ -29,8 +29,17 @@ body {
   margin: 0.5rem 0 0 0;
 }
 
+.enlace-en-imagen {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .imagen-enlace {
   width: 2.5rem;
+  cursor: pointer;
+  border-style: none;
 }
 
 .seccion-central {
