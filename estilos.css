@@ -25,6 +25,14 @@ body {
   margin: 0.5rem 0 0 0;
 }
 
+.seccion-enlaces {
+  margin: 0.5rem 0 0 0;
+}
+
+.imagen-enlace {
+  width: 2.5rem;
+}
+
 .seccion-central {
   display: flex;
   justify-content: center;
