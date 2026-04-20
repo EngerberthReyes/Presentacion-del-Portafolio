@@ -84,7 +84,12 @@ body {
 
 .flex-educacion {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cincuenta {
+  flex: 1 1 45%;
 }
 
 .experiencia {
