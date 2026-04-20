@@ -35,6 +35,10 @@ body {
   width: 50%;
 }
 
+.imagen-representativa {
+  width: 10rem;
+}
+
 .seccion-informacion-presentacion {
   display: flex;
   justify-content: space-between;
