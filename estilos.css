@@ -99,3 +99,31 @@ body {
 .contenedor-experiencia {
   padding: 1rem 1rem 0 1rem;
 }
+
+.contenedor-centrado {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.boton-invisible {
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #eeeeee;
+  background-color: transparent;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+  transition:
+    padding 0.3s ease,
+    bacground 0.3s ease,
+    color 0.3s ease;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.boton-invisible:hover {
+  background-color: #eeeeee;
+  color: #000000;
+  border-color: #eeeeee;
+}
