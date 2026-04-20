@@ -73,8 +73,18 @@ body {
   width: 100%;
 }
 
-.seccion-sobre-mi {
+.seccion-sobre-mi,
+.seccion-educacion {
   padding: 1rem;
+}
+
+.educacion {
+  margin: 0 0 1rem 0;
+}
+
+.flex-educacion {
+  display: flex;
+  justify-content: space-between;
 }
 
 .experiencia {
