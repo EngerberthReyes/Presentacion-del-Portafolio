@@ -109,22 +109,30 @@ body {
 .seccion-proyectos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .contenedor-proyecto {
   flex: 1 0 45%;
 }
 
+.titulo-proyecto {
+  font-size: 17px;
+}
+
 .imagen-proyecto {
   width: 100%;
   border-radius: 5px;
   margin-top: 0.5rem;
-  border: 2px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .parrafo-proyecto {
-  margin: 0 0 0.4rem 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.seccion-boton {
+  text-align: center;
 }
 
 .boton-redireccion {
