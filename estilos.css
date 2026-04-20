@@ -106,7 +106,17 @@ body {
   align-items: flex-end;
 }
 
-.boton-invisible {
+.seccion-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contenedor-proyecto {
+  flex: 1 1 45%;
+}
+
+.boton-descarga {
   padding: 12px 24px;
   text-align: center;
   text-decoration: none;
@@ -116,13 +126,13 @@ body {
   border-radius: 4px;
   transition:
     padding 0.3s ease,
-    bacground 0.3s ease,
+    background-color 0.3s ease,
     color 0.3s ease;
   cursor: pointer;
   font-size: 11px;
 }
 
-.boton-invisible:hover {
+.boton-descarga:hover {
   background-color: #eeeeee;
   color: #000000;
   border-color: #eeeeee;
