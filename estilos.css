@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "JetBrainsMono-ExtraLight";
+  src: url("JetBrains Mono/JetBrainsMono-ExtraLight.ttf");
+}
+
+body {
+  font-family: "JetBrainsMono-ExtraLight";
+  background-color: #0f0f0f;
+  color: #eeeeee;
+  margin: 0;
+}
+
+.titulo-nombre {
+  font-size: 25px;
+  margin: 0;
+}
+
+.titulo {
+  font-size: 18px;
+  margin: 0;
+}
+
+.seccion-central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.seccion-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 50%;
+}
+
+.seccion-informacion-presentacion {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.seccion-sobre-mi {
+  padding: 1rem;
+}
