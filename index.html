@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos.css" />
     <link rel="shortcut icon" href="Imagenes/Pergamino.png" type="image/png" />
   </head>
-  <body>
+  <body class="body">
     <section class="seccion-central">
       <section class="seccion-informacion">
         <section class="seccion-informacion-presentacion">
@@ -16,54 +16,66 @@
             <h2 class="titulo">Programador / Desarrollador Web / Full Stack</h2>
             <h2 class="titulo sub-titulo">Caracas, Venezuela</h2>
             <section class="seccion-enlaces">
-              <a
-                href="https://github.com/EngerberthReyes"
-                target="_blank"
-                class="enlace-en-imagen"
-              >
-                <img
-                  class="imagen-enlace"
-                  src="Imagenes/Imagenes Enlazadas/Icono Github.svg"
-                  alt="Git Hub"
-                  title="Perfil de GitHub"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/engerberth-reyes-129685375/"
-                target="_blank"
-                class="enlace-en-imagen"
-              >
-                <img
-                  class="imagen-enlace"
-                  src="Imagenes/Imagenes Enlazadas/Icono LinkedIn.svg"
-                  alt="LinkedIn"
-                  title="Perfil de LinkedIn"
-                />
-              </a>
-              <a
-                href="https://candidato.ve.computrabajo.com/candidate/home?idapp=3&f=FEE939887FF3D46C"
-                target="_blank"
-                class="enlace-en-imagen"
-              >
-                <img
-                  class="imagen-enlace"
-                  src="Imagenes/Imagenes Enlazadas/Icono Computrabajo.svg"
-                  alt="Computrabajo"
-                  title="Perfil de Computrabajo"
-                />
-              </a>
-              <a
-                href="https://kuentro.ai/engerberthr"
-                target="_blank"
-                class="enlace-en-imagen"
-              >
-                <img
-                  class="imagen-enlace"
-                  src="Imagenes/Imagenes Enlazadas/Icono Kuentro.svg"
-                  alt="Küentro"
-                  title="Perfil de Küentro"
-                />
-              </a>
+              <section class="seccion-flex-enlaces">
+                <a
+                  href="https://github.com/EngerberthReyes"
+                  target="_blank"
+                  class="enlace-en-imagen"
+                >
+                  <section class="elemento-enlace">
+                    <img
+                      class="imagen-enlace"
+                      src="Imagenes/Imagenes Enlazadas/Icono Github.svg"
+                      alt="Git Hub"
+                      title="Perfil de GitHub"
+                    />
+                  </section>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/engerberth-reyes-129685375/"
+                  target="_blank"
+                  class="enlace-en-imagen"
+                >
+                  <section class="elemento-enlace">
+                    <img
+                      class="imagen-enlace"
+                      src="Imagenes/Imagenes Enlazadas/Icono LinkedIn.svg"
+                      alt="LinkedIn"
+                      title="Perfil de LinkedIn"
+                    />
+                  </section>
+                </a>
+
+                <a
+                  href="https://candidato.ve.computrabajo.com/candidate/home?idapp=3&f=FEE939887FF3D46C"
+                  target="_blank"
+                  class="enlace-en-imagen"
+                >
+                  <section class="elemento-enlace">
+                    <img
+                      class="imagen-enlace"
+                      src="Imagenes/Imagenes Enlazadas/Icono Computrabajo.svg"
+                      alt="Computrabajo"
+                      title="Perfil de Computrabajo"
+                    />
+                  </section>
+                </a>
+                <a
+                  href="https://kuentro.ai/engerberthr"
+                  target="_blank"
+                  class="enlace-en-imagen"
+                >
+                  <section class="elemento-enlace">
+                    <img
+                      class="imagen-enlace"
+                      src="Imagenes/Imagenes Enlazadas/Icono Kuentro.svg"
+                      alt="Küentro"
+                      title="Perfil de Küentro"
+                    />
+                  </section>
+                </a>
+              </section>
               <h2 class="titulo sub-titulo">Contactos</h2>
               <h2 class="titulo sub-titulo">
                 Correo Electrónico: engerberthr73@gmail.com
@@ -71,6 +83,15 @@
             </section>
           </section>
           <section class="contenedor-centrado">
+            <label class="switch">
+              <input
+                type="checkbox"
+                class="palanca"
+                checked
+                onchange="cambiarModo()"
+              />
+              <span class="deslizador"></span>
+            </label>
             <a
               href="Currículum/Currículum de Engerberth Reyes.pdf"
               download="Currículum de Engerberth Reyes"
