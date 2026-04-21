@@ -44,6 +44,8 @@ body.modo-claro {
 }
 
 .elemento-enlace {
+  width: 2rem;
+  height: 2rem;
   display: flex;
   background-color: var(--color-negro);
   border-radius: 4px;
