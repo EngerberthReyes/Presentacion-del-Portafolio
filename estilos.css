@@ -7,6 +7,18 @@
   --color-blanco: #ffffff;
   --transicion: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --sombra-color: #ffffff1a;
+  --carousel-speed: 15s;
+  --carousel-gap: 2rem;
+  --carousel-padding: 3.75rem;
+  --logo-width: 9rem;
+  --gradient-width: 15%;
+  --carrousel-color: #0f0f0f;
+
+  @media (max-width: 768px) {
+    --carousel-padding: 2rem;
+    --carousel-gap: 2rem;
+    --logo-width: 6rem;
+  }
 }
 
 body {
@@ -22,7 +34,103 @@ body {
 body.modo-claro {
   background-color: var(--color-blanco);
   color: var(--color-negro);
+  --carrousel-color: #eeeeee;
   --sombra-color: #00000026;
+}
+
+.contenedor-separador {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.separador {
+  font-size: 1.5rem;
+  color: var(--color-texto);
+  user-select: none;
+}
+
+section.logos {
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--carousel-gap);
+  height: 500px;
+  overflow-y: hidden;
+  border-radius: 5px;
+  transition: background-color var(--transicion);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000000 15%,
+    #000000 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000000 15%,
+    #000000 85%,
+    transparent 100%
+  );
+
+  .logos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: var(--carousel-gap);
+    animation: scroll-vertical var(--carousel-speed) linear infinite;
+    will-change: transform;
+
+    .imagen-habilidades {
+      width: 3rem;
+      height: auto;
+      object-fit: contain;
+      transition: scale 0.3s;
+      user-select: none;
+      border-radius: 4px;
+      box-shadow: 0px 0px 21px 0px var(--sombra-color);
+      background-color: var(--color-negro);
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+  &:hover .logos {
+    animation-play-state: paused;
+  }
+}
+
+.next {
+  width: 4rem;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 21px 0px var(--sombra-color);
+  background-color: var(--color-negro);
+  padding: 0.5rem;
+  object-fit: contain;
+  transition: scale 0.3s;
+  user-select: none;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% - var(--carousel-gap)));
+  }
 }
 
 .contenedor-experiencia,
@@ -36,6 +144,18 @@ body.modo-claro {
     box-shadow var(--transicion),
     background-color var(--transicion),
     color var(--transicion);
+}
+
+.flex-informacion {
+  display: flex;
+  justify-content: center;
+}
+
+.seccion-habilidades {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  align-self: flex-start;
 }
 
 .seccion-flex-enlaces {
