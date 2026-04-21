@@ -77,29 +77,30 @@ body.modo-claro .elemento-enlace {
   right: 0;
   bottom: 0;
   background-color: #444444;
-  transition: var(--transicion);
+  transition: 0.4s;
   border-radius: 34px;
+  display: flex;
+  align-items: center;
+  padding: 0 1px;
 }
 
-.deslizador:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #eeeeee;
-  transition: var(--transicion);
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.imagen-enlace {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.4s ease;
+  z-index: 2;
 }
 
-input:not(:checked) + .deslizador {
-  background-color: #cccccc;
+input:checked + .deslizador .imagen-enlace {
+  transform: translateX(26px);
 }
 
 input:checked + .deslizador {
   background-color: #542f81;
+}
+
+input:not(:checked) + .deslizador {
+  background-color: #ccc;
 }
 
 input:checked + .deslizador:before {
