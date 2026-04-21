@@ -9,7 +9,7 @@
   --transicion: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --sombra-color: #ffffff1a;
   --carousel-speed: 15s;
-  --carousel-gap: 1.5rem;
+  --carousel-gap: 2rem;
   --carousel-padding: 3.75rem;
   --logo-width: 9rem;
   --gradient-width: 15%;
@@ -150,10 +150,10 @@ section.logos {
 
 @keyframes scroll-vertical {
   0% {
-    transform: translateY(0);
+    transform: translateY(calc(-100% - var(--carousel-gap)));
   }
   100% {
-    transform: translateY(calc(-100% - var(--carousel-gap)));
+    transform: translateY(0);
   }
 }
 
