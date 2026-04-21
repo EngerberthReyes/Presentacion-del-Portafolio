@@ -4,10 +4,10 @@ const cambiarModo = () => {
   const icono = document.querySelector(".icono-clima");
 
   if (!checkbox.checked) {
-    icono.src = "Imagenes/Imagenes Enlazadas/Sol.svg";
+    icono.src = "Imagenes/Imagenes Enlazadas/Moon.svg";
     body.classList.add("modo-claro");
   } else {
-    icono.src = "Imagenes/Imagenes Enlazadas/Moon.svg";
+    icono.src = "Imagenes/Imagenes Enlazadas/Sol.svg";
     body.classList.remove("modo-claro");
   }
 };
