@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrainsMono-ExtraLight";
-  src: url("JetBrains Mono/JetBrainsMono-ExtraLight.ttf");
+  src: url("../JetBrains Mono/JetBrainsMono-ExtraLight.ttf");
 }
 
 :root {
@@ -21,7 +21,6 @@
     --logo-width: 6rem;
   }
 }
-
 body {
   font-family: "JetBrainsMono-ExtraLight", monospace;
   background-color: var(--color-negro);
@@ -37,6 +36,77 @@ body.modo-claro {
   color: var(--color-negro);
   --carrusel-color: #eeeeee;
   --sombra-color: #00000026;
+}
+
+.emergente-contenedor {
+  z-index: 300;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.emergente-capa-fondo {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+}
+
+.emergente-ventana {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  background-color: var(--color-negro);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: 1px solid var(--sombra-color);
+}
+
+.emergente-cerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  cursor: pointer;
+  width: 35px;
+  border-radius: 8px;
+  background-color: #00000026;
+  border: 2px solid #eeeeee;
+  color: var(--color-blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    var(--transicion),
+    transform 0.2s;
+  box-shadow: 0px 0px 15px var(--sombra-color);
+}
+
+.emergente-cerrar:hover {
+  transform: scale(1.1);
+  background-color: #00000026;
+  color: var(--color-blanco);
+}
+
+.emergente-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body.modo-claro .emergente-ventana {
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+}
+
+body.modo-claro .emergente-cerrar {
+  background-color: #00000026;
+  border-color: var(--color-blanco);
+  color: var(--color-blanco);
 }
 
 .contenedor-separador {
@@ -382,10 +452,12 @@ input:checked + .deslizador:before {
 
 .titulo-proyecto {
   font-size: 17px;
+  margin: 0;
 }
 
 .imagen-proyecto {
   width: 100%;
+  cursor: pointer;
   border-radius: 5px;
   margin-top: 0.5rem;
   border: 1px solid #eeeeee;
@@ -443,7 +515,7 @@ body.modo-claro .boton-subir {
   border: 2px solid var(--color-blanco);
   border-radius: 8px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;

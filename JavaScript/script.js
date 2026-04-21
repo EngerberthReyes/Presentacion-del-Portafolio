@@ -38,3 +38,28 @@ botonSubir.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const imagenesProyectos = document.querySelectorAll(".abrir-emergente");
+const contenedorEmergente = document.querySelector(".emergente-contenedor");
+const imagenEnEmergente = document.querySelector(".emergente-imagen");
+const botonCerrarEmergente = document.querySelector(".emergente-cerrar");
+const capaFondoEmergente = document.querySelector(".emergente-capa-fondo");
+
+imagenesProyectos.forEach((imagen) => {
+  imagen.addEventListener("click", (evento) => {
+    const rutaImagen = evento.target.getAttribute("src");
+    imagenEnEmergente.setAttribute("src", rutaImagen);
+    contenedorEmergente.style.display = "flex";
+    contenedorEmergente.style.justifyContent = "center";
+    contenedorEmergente.style.alignItems = "center";
+    document.body.style.overflow = "hidden";
+  });
+});
+
+const cerrarVentanaEmergente = () => {
+  contenedorEmergente.style.display = "none";
+  document.body.style.overflow = "auto";
+};
+
+botonCerrarEmergente.addEventListener("click", cerrarVentanaEmergente);
+capaFondoEmergente.addEventListener("click", cerrarVentanaEmergente);

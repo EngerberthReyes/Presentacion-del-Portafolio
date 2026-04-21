@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
     <link rel="shortcut icon" href="Imagenes/Pergamino.png" type="image/png" />
   </head>
   <body class="body">
@@ -34,7 +34,6 @@
                       />
                     </section>
                   </a>
-
                   <a
                     href="https://www.linkedin.com/in/engerberth-reyes-129685375/"
                     target="_blank"
@@ -180,16 +179,15 @@
             <section class="seccion-proyectos">
               <section class="contenedor-proyecto">
                 <h2 class="sub-titulo titulo-proyecto">
-                  Clon de YouTube [Generalmente Estático]
+                  CMS [Sistema de Gestión de Contenidos]
                 </h2>
                 <img
-                  src="Imagenes/Imagenes de Proyectos/Clon de Youtube.png"
-                  alt="Vista Previa del Clon de YouTube"
-                  class="imagen-proyecto"
+                  src="Imagenes/Imagenes de Proyectos/CMS.png"
+                  alt="Vista Previa del CMS"
+                  class="imagen-proyecto abrir-emergente"
                 />
                 <p class="parrafo-proyecto">
-                  Simple Clon de YouTube, generalmente que es estático pero
-                  funcional en la visualización de los videos.
+                  Simple Clon de YouTube, estático pero funcional.
                 </p>
                 <section class="seccion-boton">
                   <a href="" class="boton-redireccion">Ir al Código Proyecto</a>
@@ -202,7 +200,7 @@
                 <img
                   src="Imagenes/Imagenes de Proyectos/Clon de Youtube.png"
                   alt="Vista Previa del Clon de YouTube"
-                  class="imagen-proyecto"
+                  class="imagen-proyecto abrir-emergente"
                 />
                 <p class="parrafo-proyecto">
                   Simple Clon de YouTube, generalmente que es estático pero
@@ -432,6 +430,13 @@
         class="icono-subir"
       />
     </button>
-    <script src="script.js"></script>
+    <div class="emergente-contenedor">
+      <div class="emergente-capa-fondo"></div>
+      <div class="emergente-ventana">
+        <img src="Imagenes/Imagenes Enlazadas/X.svg" class="emergente-cerrar" />
+        <img src="" alt="Vista ampliada" class="emergente-imagen" />
+      </div>
+    </div>
+    <script src="JavaScript/script.js" type="text/javascript"></script>
   </body>
 </html>
