@@ -20,3 +20,21 @@ const cambiarModo = () => {
     body.classList.remove("modo-claro");
   }
 };
+
+const botonSubir = document.querySelector(".btnScrollTop");
+
+const controlarScroll = () => {
+  const { scrollHeight, clientHeight } = document.documentElement;
+  const desplazamientoTotal = scrollHeight - clientHeight;
+  const porcentajeActual = (window.scrollY / desplazamientoTotal) * 100;
+  botonSubir.classList.toggle("mostrar", porcentajeActual > 30);
+};
+
+window.addEventListener("scroll", controlarScroll, { passive: true });
+
+botonSubir.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

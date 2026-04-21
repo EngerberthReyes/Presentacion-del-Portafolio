@@ -428,6 +428,52 @@ body.modo-claro .boton-redireccion {
   border-color: #eeeeee;
 }
 
+body.modo-claro .boton-subir {
+  background-color: var(--color-negro);
+  border: 2px solid var(--color-negro);
+}
+
+.boton-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--color-negro);
+  border: 2px solid var(--color-blanco);
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px var(--sombra-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100px);
+  transition:
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease,
+    visibility 0.4s,
+    background-color var(--transicion);
+}
+
+.boton-subir.mostrar {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:
+    transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.4s ease,
+    visibility 0.4s,
+    background-color var(--transicion);
+}
+
+.boton-subir:hover {
+  transform: scale(1.1) translateY(0) !important;
+  background-color: var(--color-negro);
+}
+
 .seccion-informacion-presentacion {
   display: flex;
   justify-content: space-between;
