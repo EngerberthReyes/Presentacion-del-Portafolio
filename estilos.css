@@ -61,7 +61,7 @@ section.logos {
   display: flex;
   flex-direction: column;
   row-gap: var(--carousel-gap);
-  height: 500px;
+  height: 57rem;
   overflow-y: hidden;
   border-radius: 5px;
   transition: background-color var(--transicion);
