@@ -57,8 +57,13 @@ imagenesProyectos.forEach((imagen) => {
 });
 
 const cerrarVentanaEmergente = () => {
-  contenedorEmergente.style.display = "none";
+  const ventana = document.querySelector(".emergente-ventana");
+  ventana.classList.add("cerrar-animacion");
   document.body.style.overflow = "auto";
+  setTimeout(() => {
+    contenedorEmergente.style.display = "none";
+    ventana.classList.remove("cerrar-animacion");
+  }, 250);
 };
 
 document.addEventListener("keydown", (evento) => {
