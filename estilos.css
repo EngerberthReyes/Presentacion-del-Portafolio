@@ -8,7 +8,7 @@
   --transicion: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --sombra-color: #ffffff1a;
   --carousel-speed: 15s;
-  --carousel-gap: 2rem;
+  --carousel-gap: 1.5rem;
   --carousel-padding: 3.75rem;
   --logo-width: 9rem;
   --gradient-width: 15%;
@@ -106,6 +106,25 @@ section.logos {
   &:hover .logos {
     animation-play-state: paused;
   }
+}
+
+.seccion-flex-logos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sql-textos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sub-titulo-logos-sql {
+  margin: 0;
 }
 
 .next {
