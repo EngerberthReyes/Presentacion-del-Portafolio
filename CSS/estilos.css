@@ -51,7 +51,7 @@ body.modo-claro {
 .emergente-capa-fondo {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background-color: #000000ab;
   position: absolute;
 }
 
@@ -74,8 +74,6 @@ body.modo-claro {
   cursor: pointer;
   width: 35px;
   border-radius: 8px;
-  background-color: #00000026;
-  border: 2px solid #eeeeee;
   color: var(--color-blanco);
   display: flex;
   align-items: center;
@@ -83,12 +81,10 @@ body.modo-claro {
   transition:
     var(--transicion),
     transform 0.2s;
-  box-shadow: 0px 0px 15px var(--sombra-color);
 }
 
 .emergente-cerrar:hover {
   transform: scale(1.1);
-  background-color: #00000026;
   color: var(--color-blanco);
 }
 
@@ -96,17 +92,6 @@ body.modo-claro {
   width: 100%;
   height: auto;
   display: block;
-}
-
-body.modo-claro .emergente-ventana {
-  background-color: var(--color-blanco);
-  color: var(--color-negro);
-}
-
-body.modo-claro .emergente-cerrar {
-  background-color: #00000026;
-  border-color: var(--color-blanco);
-  color: var(--color-blanco);
 }
 
 .contenedor-separador {
