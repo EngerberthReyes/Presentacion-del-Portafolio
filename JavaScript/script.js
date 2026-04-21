@@ -61,5 +61,11 @@ const cerrarVentanaEmergente = () => {
   document.body.style.overflow = "auto";
 };
 
+document.addEventListener("keydown", (evento) => {
+  if (evento.key === "Escape" && contenedorEmergente.style.display === "flex") {
+    cerrarVentanaEmergente();
+  }
+});
+
 botonCerrarEmergente.addEventListener("click", cerrarVentanaEmergente);
 capaFondoEmergente.addEventListener("click", cerrarVentanaEmergente);
