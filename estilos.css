@@ -75,7 +75,6 @@ body {
 }
 
 .seccion-sobre-mi,
-.seccion-general-proyectos,
 .contenedor-experiencia {
   padding: 1rem;
   margin-top: 1rem;
@@ -130,6 +129,10 @@ body {
   flex: 1 0 45%;
   padding: 1rem;
   box-shadow: 0px 0px 21px 0px #eeeeee0d;
+}
+
+.seccion-general-proyectos {
+  padding: 1rem;
 }
 
 .proyectos {
