@@ -457,10 +457,6 @@ input:checked + .deslizador:before {
   padding: 1rem;
 }
 
-.seccion-general-proyectos {
-  padding: 1rem;
-}
-
 .proyectos {
   margin: 1rem 0;
 }
