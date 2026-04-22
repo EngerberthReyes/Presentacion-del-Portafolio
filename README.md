@@ -1,3 +1,3 @@
 # La Presentación de Mi Portafolio
 
-Creado por Engerberth Reyes
+Creado y diseñado por Engerberth Reyes.
