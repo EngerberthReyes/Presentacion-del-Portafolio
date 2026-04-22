@@ -606,12 +606,6 @@ body.modo-claro .boton-subir {
     order: 1;
   }
 
-  .cincuenta,
-  .cien,
-  .contenedor-proyecto {
-    flex: 1 0 100%;
-  }
-
   .seccion-flex-enlaces {
     justify-content: center;
   }
