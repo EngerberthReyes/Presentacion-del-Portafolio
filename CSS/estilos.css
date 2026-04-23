@@ -8,16 +8,16 @@
   --color-blanco: #ffffff;
   --transicion: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --sombra-color: #ffffff1a;
-  --carrusel-speed: 15s;
-  --carrusel-gap: 2rem;
-  --carrusel-padding: 3.75rem;
+  --carousel-speed: 30s;
+  --carousel-gap: 2rem;
+  --carousel-padding: 3.75rem;
   --logo-width: 9rem;
   --gradient-width: 15%;
   --carrusel-color: #0f0f0f;
 
   @media (max-width: 768px) {
-    --carrusel-padding: 2rem;
-    --carrusel-gap: 1rem;
+    --carousel-padding: 2rem;
+    --carousel-gap: 1rem;
     --logo-width: 6rem;
   }
 }
@@ -147,31 +147,35 @@ section.logos {
 
 .carrusel {
   position: relative;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  row-gap: var(--carousel-gap);
+  height: 900px;
   overflow: hidden;
   border-radius: 5px;
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%
-  );
+  transition: background-color var(--transicion);
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    black 15%,
-    black 85%,
+    #000000 15%,
+    #000000 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000000 15%,
+    #000000 85%,
     transparent 100%
   );
 
   .logos {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: var(--carrusel-gap);
-    padding: 1rem 0;
-    animation: scroll-vertical var(--carrusel-speed) linear infinite;
+    row-gap: var(--carousel-gap);
+    animation: scroll-vertical var(--carousel-speed) linear infinite;
     will-change: transform;
 
     .imagen-habilidades {
@@ -191,15 +195,6 @@ section.logos {
 
   &:hover .logos {
     animation-play-state: paused;
-  }
-}
-
-@keyframes scroll-vertical {
-  0% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
@@ -235,6 +230,15 @@ section.logos {
 
   &:hover {
     scale: 1.1;
+  }
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(calc(-100% - var(--carousel-gap)));
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
