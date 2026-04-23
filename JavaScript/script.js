@@ -79,7 +79,7 @@ const baseHabilidades = [
   },
 ];
 
-const habilidades = Array(10).fill(baseHabilidades).flat();
+const habilidades = Array(50).fill(baseHabilidades).flat();
 
 const renderizarHabilidades = () => {
   const contenedor = document.querySelector(".logos");
