@@ -8,16 +8,16 @@
   --color-blanco: #ffffff;
   --transicion: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --sombra-color: #ffffff1a;
-  --carousel-speed: 30s;
-  --carousel-gap: 2rem;
-  --carousel-padding: 3.75rem;
+  --carrusel-speed: 15s;
+  --carrusel-gap: 2rem;
+  --carrusel-padding: 3.75rem;
   --logo-width: 9rem;
   --gradient-width: 15%;
   --carrusel-color: #0f0f0f;
 
   @media (max-width: 768px) {
-    --carousel-padding: 2rem;
-    --carousel-gap: 1rem;
+    --carrusel-padding: 2rem;
+    --carrusel-gap: 1rem;
     --logo-width: 6rem;
   }
 }
@@ -169,9 +169,9 @@ section.logos {
   .logos {
     display: flex;
     flex-direction: column;
-    gap: var(--carousel-gap);
+    gap: var(--carrusel-gap);
     padding: 1rem 0;
-    animation: scroll-vertical var(--carousel-speed) linear infinite;
+    animation: scroll-vertical var(--carrusel-speed) linear infinite;
     will-change: transform;
 
     .imagen-habilidades {
@@ -183,6 +183,7 @@ section.logos {
       border-radius: 4px;
       box-shadow: 0px 0px 21px 0px var(--sombra-color);
       background-color: var(--color-negro);
+
       &:hover {
         scale: 1.1;
       }
