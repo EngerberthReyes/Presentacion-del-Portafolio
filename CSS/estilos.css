@@ -8,7 +8,7 @@
   --color-blanco: #ffffff;
   --transicion: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --sombra-color: #ffffff1a;
-  --carrusel-speed: 40s;
+  --carrusel-speed: 120s;
   --carrusel-gap: 2rem;
   --carrusel-padding: 3.75rem;
   --logo-width: 9rem;
@@ -182,20 +182,21 @@ section.logos {
       width: 3rem;
       height: auto;
       object-fit: contain;
-      transition: scale 0.3s;
+      transition: transform 0.3s ease;
       user-select: none;
       border-radius: 4px;
       box-shadow: 0px 0px 21px 0px var(--sombra-color);
       background-color: var(--color-negro);
-      &:hover {
-        scale: 1.1;
-      }
     }
   }
+}
 
-  &:hover .logos {
-    animation-play-state: paused;
-  }
+.imagen-habilidades:hover {
+  transform: scale(1.1);
+}
+
+.carrusel:hover .logos {
+  animation-play-state: paused;
 }
 
 .seccion-flex-logos {
@@ -225,12 +226,12 @@ section.logos {
   background-color: var(--color-negro);
   padding: 0.5rem;
   object-fit: contain;
-  transition: scale 0.3s;
+  transition: transform 0.3s ease;
   user-select: none;
+}
 
-  &:hover {
-    scale: 1.1;
-  }
+.next:hover {
+  transform: scale(1.1);
 }
 
 @keyframes scroll-vertical {

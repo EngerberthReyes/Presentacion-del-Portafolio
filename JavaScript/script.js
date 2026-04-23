@@ -45,131 +45,7 @@ informacion.forEach((proyecto) => {
 
 contenedor.appendChild(fragmento);
 
-const habilidades = [
-  {
-    nombre: "Node.js",
-    icono: "Imagenes/Habilidades/Node Js.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "Python",
-    icono: "Imagenes/Habilidades/Python.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "SQL",
-    icono: "Imagenes/Habilidades/PostgreSQL.svg",
-    tipo: "sql",
-    subtitulos: ["MySQL", "PostgreSQL"],
-  },
-  {
-    nombre: "Frontend",
-    tipo: "separador",
-    iconos: [
-      "Imagenes/Habilidades/React.svg",
-      "Imagenes/Habilidades/Next Js.png",
-    ],
-    alts: ["React", "Next.js"],
-  },
-  {
-    nombre: "Git",
-    icono: "Imagenes/Habilidades/Git.svg",
-    tipo: "simple",
-    title: "Git / Github",
-  },
-  {
-    nombre: "Node.js",
-    icono: "Imagenes/Habilidades/Node Js.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "Python",
-    icono: "Imagenes/Habilidades/Python.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "SQL",
-    icono: "Imagenes/Habilidades/PostgreSQL.svg",
-    tipo: "sql",
-    subtitulos: ["MySQL", "PostgreSQL"],
-  },
-  {
-    nombre: "Frontend",
-    tipo: "separador",
-    iconos: [
-      "Imagenes/Habilidades/React.svg",
-      "Imagenes/Habilidades/Next Js.png",
-    ],
-    alts: ["React", "Next.js"],
-  },
-  {
-    nombre: "Git",
-    icono: "Imagenes/Habilidades/Git.svg",
-    tipo: "simple",
-    title: "Git / Github",
-  },
-  {
-    nombre: "Node.js",
-    icono: "Imagenes/Habilidades/Node Js.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "Python",
-    icono: "Imagenes/Habilidades/Python.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "SQL",
-    icono: "Imagenes/Habilidades/PostgreSQL.svg",
-    tipo: "sql",
-    subtitulos: ["MySQL", "PostgreSQL"],
-  },
-  {
-    nombre: "Frontend",
-    tipo: "separador",
-    iconos: [
-      "Imagenes/Habilidades/React.svg",
-      "Imagenes/Habilidades/Next Js.png",
-    ],
-    alts: ["React", "Next.js"],
-  },
-  {
-    nombre: "Git",
-    icono: "Imagenes/Habilidades/Git.svg",
-    tipo: "simple",
-    title: "Git / Github",
-  },
-  {
-    nombre: "Node.js",
-    icono: "Imagenes/Habilidades/Node Js.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "Python",
-    icono: "Imagenes/Habilidades/Python.svg",
-    tipo: "simple",
-  },
-  {
-    nombre: "SQL",
-    icono: "Imagenes/Habilidades/PostgreSQL.svg",
-    tipo: "sql",
-    subtitulos: ["MySQL", "PostgreSQL"],
-  },
-  {
-    nombre: "Frontend",
-    tipo: "separador",
-    iconos: [
-      "Imagenes/Habilidades/React.svg",
-      "Imagenes/Habilidades/Next Js.png",
-    ],
-    alts: ["React", "Next.js"],
-  },
-  {
-    nombre: "Git",
-    icono: "Imagenes/Habilidades/Git.svg",
-    tipo: "simple",
-    title: "Git / Github",
-  },
+const baseHabilidades = [
   {
     nombre: "Node.js",
     icono: "Imagenes/Habilidades/Node Js.svg",
@@ -202,6 +78,8 @@ const habilidades = [
     title: "Git / Github",
   },
 ];
+
+const habilidades = Array(10).fill(baseHabilidades).flat();
 
 const renderizarHabilidades = () => {
   const contenedor = document.querySelector(".logos");
