@@ -177,16 +177,14 @@ section.logos {
     .imagen-habilidades {
       width: 3rem;
       height: auto;
-      transform: translateZ(0);
       object-fit: contain;
       transition: scale 0.3s;
       user-select: none;
       border-radius: 4px;
       box-shadow: 0px 0px 21px 0px var(--sombra-color);
       background-color: var(--color-negro);
-
       &:hover {
-        transform: scale(1.1);
+        scale: 1.1;
       }
     }
   }
@@ -198,10 +196,10 @@ section.logos {
 
 @keyframes scroll-vertical {
   0% {
-    transform: translate3d(0, -50%, 0);
+    transform: translateY(-50%);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 }
 
