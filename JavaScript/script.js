@@ -29,7 +29,7 @@ const informacion = [
 ];
 
 const contenedor = document.querySelector(".seccion-proyectos");
-const plantilla = document.querySelector(".plantilla-proyecto").content;
+const plantilla = document.querySelector(".plantilla-proyecto")?.content;
 const fragmento = document.createDocumentFragment();
 
 informacion.forEach((proyecto) => {
