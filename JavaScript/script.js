@@ -34,12 +34,12 @@ const fragmento = document.createDocumentFragment();
 
 informacion.forEach((proyecto) => {
   const clone = plantilla.cloneNode(true);
-  clone.querySelector(".titulo-proyecto").textContent = proyecto.subTitulo;
-  clone.querySelector(".imagen-proyecto").src = proyecto.imagen;
-  clone.querySelector(".imagen-proyecto").alt = proyecto.subTitulo;
-  clone.querySelector(".parrafo-proyecto").textContent =
+  clone.querySelector(".titulo-proyecto")?.textContent = proyecto.subTitulo;
+  clone.querySelector(".imagen-proyecto")?.src = proyecto.imagen;
+  clone.querySelector(".imagen-proyecto")?.alt = proyecto.subTitulo;
+  clone.querySelector(".parrafo-proyecto")?.textContent =
     proyecto.parrafoProyecto;
-  clone.querySelector(".boton-redireccion").href = proyecto.enlaceProyecto;
+  clone.querySelector(".boton-redireccion")?.href = proyecto.enlaceProyecto;
   fragmento.appendChild(clone);
 });
 
