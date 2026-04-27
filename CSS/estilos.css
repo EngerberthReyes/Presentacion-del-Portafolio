@@ -599,6 +599,7 @@ body.modo-claro .boton-subir {
 }
 
 .seccion-habilidades {
+  width: 12rem;
   flex: 0 0 auto;
   position: sticky;
   top: 1rem;
