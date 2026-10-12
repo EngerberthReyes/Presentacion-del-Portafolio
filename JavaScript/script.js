@@ -145,7 +145,7 @@ const cambiarModo = () => {
   } else {
     icono.src = "Imagenes/Imagenes Enlazadas/Sol.svg";
     botonDescarga.href =
-      "Currículums/Currículum de Engerberth Reyes en Formato Oscuro.pdf";
+      "Currículums/Currículum de Engerberth Reyes En Oscuro.pdf";
     botonDescarga.title = "Engerberth Reyes En Oscuro";
     botonDescarga.download = "Engerberth Reyes En Oscuro";
     body.classList.remove("modo-claro");
