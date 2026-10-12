@@ -138,17 +138,16 @@ const cambiarModo = () => {
 
   if (!checkbox.checked) {
     icono.src = "Imagenes/Imagenes Enlazadas/Moon.svg";
-    botonDescarga.href =
-      "Currículum/Currículum de Engerberth Reyes en Formato Blanco.pdf";
-    botonDescarga.title = "Currículum de Engerberth Reyes en Formato Blanco";
-    botonDescarga.download = "Currículum de Engerberth Reyes en Formato Blanco";
+    botonDescarga.href = "Curriculums/Engerberth Reyes.pdf";
+    botonDescarga.title = "Engerberth Reyes";
+    botonDescarga.download = "Engerberth Reyes";
     body.classList.add("modo-claro");
   } else {
     icono.src = "Imagenes/Imagenes Enlazadas/Sol.svg";
     botonDescarga.href =
-      "Currículum/Currículum de Engerberth Reyes en Formato Oscuro.pdf";
-    botonDescarga.title = "Currículum de Engerberth Reyes en Formato Oscuro";
-    botonDescarga.download = "Currículum de Engerberth Reyes en Formato Oscuro";
+      "Currículums/Currículum de Engerberth Reyes en Formato Oscuro.pdf";
+    botonDescarga.title = "Engerberth Reyes En Oscuro";
+    botonDescarga.download = "Engerberth Reyes En Oscuro";
     body.classList.remove("modo-claro");
   }
 };
